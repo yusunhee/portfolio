@@ -1,0 +1,85 @@
+.custom-modal {
+  width: 50%;
+  height: auto;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 60% !important;
+
+  }
+}
+
+.modal-body {
+  padding: 0 !important; //modal body의 패딩을 없애주기 위해
+}
+
+.close-btn {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-size: 15pt;
+}
+
+.sub-title-container {
+  position: absolute;
+  top: 4%;
+  left: 5%;
+  font-size: 13pt;
+  color: black;
+}
+
+.title-container {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  font-size: 25pt;
+  font-weight: 800;
+  color: black;
+}
+
+.contents-container {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  font-size: 12pt;
+  color: black;
+}
+
+.period-container {
+  position: absolute;
+  bottom: 13%;
+  left: 5%;
+  display: flex;
+  font-size: 11pt;
+  color: black;
+  width: 100%;
+}
+
+.work-container {
+  position: absolute;
+  bottom: 9%;
+  left: 5%;
+  display: flex;
+  font-size: 11pt;
+  color: black;
+  width: 100%;
+}
+
+.tool-container {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  display: flex;
+  font-size: 11pt;
+  color: black;
+  width: 100%;
+}
+
+.container-title {
+  font-weight: 700;
+  width: 10%;
+}
+
+.container-contents {
+}

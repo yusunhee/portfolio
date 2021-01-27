@@ -1,0 +1,20 @@
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+
+  //로고 영역
+  .logo {
+    font-weight: 700;
+    font-size: 2.5rem;
+    align-self: center;
+    color: #ffb000;
+  }
+
+  //날짜 영역
+  .date {
+    font-weight: 500;
+    font-size: 1.5rem;
+    align-self: center;
+  }
+}

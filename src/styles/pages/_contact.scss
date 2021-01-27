@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css2?family=Tinos:ital@1&display=swap);
+
+.contact-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #ffb000;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5em 2.5em;
+  box-sizing: border-box;
+
+  //contact 영역
+  .contact {
+    flex: 1;
+    padding: 10px;
+
+    input,
+    textarea {
+      color: white;
+      font: inherit;
+      margin: 0;
+    }
+
+    input {
+      line-height: normal;
+    }
+
+    textarea {
+      overflow: auto;
+    }
+
+    #container {
+      border: solid 3px white;
+      margin: 0 auto;
+      max-width: 650px;
+      max-height: 650px;
+      position: relative;
+      width: 100%;
+    }
+
+    form {
+      padding: 45px;
+    }
+
+    h2 {
+      color: white;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 7px;
+      text-align: center;
+      padding-top: 45px;
+    }
+
+    .email {
+      float: right;
+      width: 45%;
+    }
+
+    input[type="text"],
+    [type="email"],
+    select,
+    textarea {
+      background: none;
+      border: none;
+      border-bottom: solid 2px white;
+      color: white;
+      font-size: 1em;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin: 0em 0 1.875em 0;
+      padding: 0 0 0.875em 0;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    input[type="text"]:focus,
+    [type="email"]:focus,
+    textarea:focus {
+      outline: none;
+      padding: 0 0 0.875em 0;
+    }
+
+    .message {
+      float: none;
+    }
+
+    .name {
+      float: left;
+      width: 45%;
+    }
+
+    .subject {
+      width: 100%;
+    }
+
+    textarea {
+      line-height: 150%;
+      height: 150px;
+      resize: none;
+      width: 100%;
+    }
+
+    ::-webkit-input-placeholder {
+      color: white;
+    }
+
+    #form_button {
+      background: none;
+      border: solid 2px white;
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      outline: none;
+      padding: 20px 35px;
+      text-transform: uppercase;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    .submit {
+      text-align: center;
+    }
+
+    #form_button:hover {
+      background: white;
+      color: #ffb000;
+    }
+  }
+
+  //이미지 있는 영역
+  .image-area {
+    flex: 1;
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      //가로 사이즈가 1145px 미만이면
+      @media (max-width: 1144px) {
+        padding-top: 95px;
+        flex-direction: column;
+      }
+    }
+
+    ul li {
+      position: relative;
+      margin: 0 3em;
+    }
+
+    .image,
+    .shadow {
+      transform: rotateX(45deg) rotateZ(-25deg);
+      transform-style: preserve-3d;
+      transition: 0.3s;
+    }
+
+    .image {
+      background: #fff;
+      position: relative;
+      font-size: 150pt;
+      padding: 30px;
+      border: 1px solid #d0d0d0;
+    }
+
+    .image img {
+      vertical-align: bottom;
+      filter: grayscale(100%);
+      transition: 0.3s;
+      width: 300px;
+    }
+
+    .image::before,
+    .image::after {
+      content: "";
+      position: absolute;
+    }
+
+    .image::before {
+      bottom: -8px;
+      left: 0;
+      background-color: #d0d0d0;
+      width: 100%;
+      height: 16px;
+      transform: rotateX(90deg) translateY(-8px);
+    }
+
+    .image::after {
+      top: 0;
+      left: -8px;
+      width: 16px;
+      height: 100%;
+      background-color: #bbb;
+      transform: rotateY(90deg) translateX(8px);
+    }
+
+    .shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      box-shadow: -35px 45px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    ul li:hover .image,
+    ul li:hover .shadow {
+      transform: rotate(0);
+    }
+
+    ul li:hover .image img {
+      filter: grayscale(0);
+    }
+
+    ul li:hover .shadow {
+      box-shadow: 0 5px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    //mail, sns, git
+    .stats {
+      text-align: left;
+      margin: 0 0 50px 10px;
+      align-self: flex-end;
+
+      div {
+        margin-top: 10px;
+        a:link {
+          color: #212529;
+          text-decoration: none;
+        }
+        a:visited {
+          color: #212529;
+          text-decoration: none;
+        }
+        a:hover {
+          color: #212529;
+          text-decoration: none;
+        }
+      }
+
+      .box {
+        font-size: 25px;
+
+        &:hover {
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

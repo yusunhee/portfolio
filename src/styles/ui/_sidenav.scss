@@ -1,0 +1,16 @@
+.sidenav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+
+  .left-text {
+    writing-mode: vertical-rl;
+    align-self: center;
+  }
+
+  .right-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    align-self: center;
+  }
+}

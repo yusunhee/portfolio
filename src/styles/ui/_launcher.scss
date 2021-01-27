@@ -1,0 +1,56 @@
+.launcher-container {
+  text-align: center;
+  color: rgb(46, 46, 46);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .loading-container {
+    .bubble {
+      width: 15px;
+      height: 15px;
+      background-color: yellow;
+      border-radius: 50%;
+      display: inline-block;
+      -webkit-animation: in-and-out-bubbles 1.2s infinite ease-in-out;
+      animation: in-and-out-bubbles 1.2s infinite ease-in-out;
+    }
+
+    .bubble1 {
+      -webkit-animation-delay: -0.35s;
+      animation-delay: -0.35s;
+    }
+
+    .bubble2 {
+      -webkit-animation-delay: -0.2s;
+      animation-delay: -0.2s;
+    }
+
+    @keyframes in-and-out-bubbles {
+      0%,
+      80%,
+      100% {
+        transform: scale(0);
+      }
+      20% {
+        transform: scale(1);
+      }
+    }
+
+    @-webkit-keyframes in-and-out-bubbles {
+      0%,
+      80%,
+      100% {
+        -webkit-transform: scale(0);
+      }
+      20% {
+        -webkit-transform: scale(1);
+      }
+    }
+  }
+
+  .text {
+    font-weight: bold;
+  }
+}

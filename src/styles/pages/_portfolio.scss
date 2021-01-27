@@ -1,0 +1,148 @@
+.portfolio-container {
+  padding-top: 44px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #ffb000;
+
+  @media (max-width: 1144px) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 139px;
+  }
+
+  //포트폴리오 필터
+  .filter-container {
+    justify-content: center;
+    margin: 30px;
+    text-align: center;
+    flex: 1.5;
+    align-self: center;
+
+    .filter {
+      text-decoration: none;
+      font: 20px Raleway;
+      margin: 0px 10px;
+      padding: 10px 10px;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+
+  .brackets div:before,
+  .brackets div:after {
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
+  }
+
+  .brackets div:before {
+    content: "(";
+    left: 25%;
+    transform: translateX(10px);
+  }
+
+  .brackets div:after {
+    content: ")";
+    right: 25%;
+    transform: translateX(-10px);
+  }
+
+  .brackets div:hover:before,
+  .brackets div:hover:after {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  .list-container {
+    flex: 8.5;
+    padding: 30px;
+    background: #fff;
+
+    //포트폴리오 리스트
+    .portfolio-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      @media (max-width: 1144px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+      }
+
+      .screen {
+        position: relative;
+      }
+
+      .screen img {
+        width: 100%;
+        height: auto;
+      }
+
+      .screen span {
+        display: block;
+        position: absolute;
+        background: #ffb000;
+        transition: all 0.7s;
+      }
+
+      .screen span:nth-child(1) {
+        top: 0;
+        height: 10px;
+        width: 0;
+      }
+      .screen span:nth-child(2) {
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 0;
+      }
+      .screen span:nth-child(3) {
+        bottom: 0;
+        right: 0;
+        height: 10px;
+        width: 0;
+      }
+      .screen span:nth-child(4) {
+        bottom: 0;
+        left: 0;
+        width: 10px;
+        height: 0;
+      }
+      .screen:hover span:nth-child(1) {
+        width: 100%;
+      }
+      .screen:hover span:nth-child(2) {
+        height: 100%;
+      }
+      .screen:hover span:nth-child(3) {
+        width: 100%;
+      }
+      .screen:hover span:nth-child(4) {
+        height: 100%;
+      }
+
+      .sub-title-container {
+        position: absolute;
+        top: 8%;
+        left: 6.5%;
+        font-size: 10pt;
+        color: black;
+      }
+
+      .title-container {
+        position: absolute;
+        top: 12%;
+        left: 6.5%;
+        font-size: 18pt;
+        font-weight: 800;
+        color: black;
+      }
+    }
+  }
+}
