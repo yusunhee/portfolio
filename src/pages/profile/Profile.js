@@ -15,11 +15,10 @@ class Profile extends Component {
               </pre>
               <diV className="on-mouse">
                 <p className="text">#이웃집토토로💜</p>
-                <p className="text">#스노우보드💛</p>
-                <p className="text">#유바비🤎</p>
+                <p className="text">#스노우보드🤍</p>
+                <p className="text">#유바비💛</p>
                 <p className="text">#커피💖</p>
-                <p className="text">#초콜렛🤍</p>
-                <p className="text">#え占ØΙ슬💚</p>
+                <p className="text">#초콜렛🤎</p>
               </diV>
             </div>
           </div>
