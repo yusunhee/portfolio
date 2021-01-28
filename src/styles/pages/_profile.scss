@@ -51,7 +51,7 @@
           .text {
             text-align: -webkit-left;
             margin-left: 20px;
-            font-size: 15pt;
+            font-size: 12pt;
             cursor: help;
           }
         }
@@ -91,13 +91,18 @@
         justify-self: left;
         display: flex;
 
+        .title {
+          font-size: 15pt;
+          font-weight: bold;
+        }
+
         .text-a {
           width: 100%;
-          margin-right: 70px;
+          margin-right: 50px;
         }
         .text-b {
           width: 100%;
-          margin-right: 70px;
+          margin-right: 100px;
         }
       }
     }
