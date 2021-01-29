@@ -45,6 +45,7 @@ class Portfolio extends Component {
 
     this.state = {
       portfolioArr: [
+        //웹/모바일(device)
         {
           idx: 1,
           image: profileImg01,
@@ -334,6 +335,7 @@ class Portfolio extends Component {
           ],
           fontColor: "black",
         },
+        //편집디자인(edit)
         {
           idx: 20,
           image: profileImg100,
@@ -494,6 +496,7 @@ class Portfolio extends Component {
           contents: ["이오스안과", "군인잡지 HIM", "라섹 홍보전단"],
           fontColor: "black",
         },
+        //기타(etc) 필터값
         {
           idx: 32,
           image: profileImg112,
