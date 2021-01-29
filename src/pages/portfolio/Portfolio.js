@@ -5,7 +5,7 @@ import profileImg02 from "../../images/medical_ad_banner01.png";
 import profileImg03 from "../../images/event_page03.png";
 import profileImg04 from "../../images/platform_banner02.png";
 import profileImg05 from "../../images/wide_thumbnail01.png";
-import profileImg06 from "../../images/web_banner01.png";
+import profileImg06 from "../../images/detail_page01.png";
 import profileImg07 from "../../images/platform_banner01.png";
 import profileImg08 from "../../images/home_page01.png";
 import profileImg09 from "../../images/promotion_banner02.png";
@@ -17,7 +17,7 @@ import profileImg14 from "../../images/main_page01.png";
 import profileImg15 from "../../images/popup_banner01.png";
 import profileImg16 from "../../images/promotion_banner03.png";
 import profileImg17 from "../../images/detail_page02.png";
-import profileImg18 from "../../images/detail_page01.png";
+import profileImg18 from "../../images/web_banner01.png";
 import profileImg19 from "../../images/mobile_app01.png";
 
 import profileImg100 from "../../images/sheet_paper01.png";
@@ -59,6 +59,7 @@ class Portfolio extends Component {
             "프로모션 이벤트 및",
             "체험단 모집 등의 콘텐츠 배너",
           ],
+          fontColor: "black",
         },
         {
           idx: 2,
@@ -74,6 +75,7 @@ class Portfolio extends Component {
             "SNS&포털사이트 등의",
             "온라인 광고 배너",
           ],
+          fontColor: "black",
         },
         {
           idx: 3,
@@ -89,6 +91,7 @@ class Portfolio extends Component {
             "현대백화점/우리은행/반얀트리",
             "뉴스레터 이벤트 페이지",
           ],
+          fontColor: "white",
         },
         {
           idx: 4,
@@ -104,6 +107,7 @@ class Portfolio extends Component {
             "메디투안 디엔핑",
             "윤곽 수술 광고 배너",
           ],
+          fontColor: "black",
         },
         {
           idx: 5,
@@ -115,21 +119,19 @@ class Portfolio extends Component {
           work: "디자인",
           tool: "Ps/Ai",
           contents: ["드림성형외페이과", "네이버 브랜드검색", "와이드 썸네일"],
+          fontColor: "black",
         },
         {
           idx: 6,
           image: profileImg06,
           filterVal: "device",
-          subTitle: "WEB BANNER",
-          title: "온라인 광고 배너",
+          subTitle: "DETAIL PAGE",
+          title: "상세 페이지",
           period: "2019.05.21 - 05.24",
           work: "디자인 및 리사이징",
           tool: "Ps / Ai",
-          contents: [
-            "온라인&웹 페이지에",
-            "노출 되는 드림성형외과",
-            "광고 배너",
-          ],
+          contents: ["메이준뉴트리", "자사몰 단독상품", "상세 페이지"],
+          fontColor: "black",
         },
         {
           idx: 7,
@@ -145,6 +147,7 @@ class Portfolio extends Component {
             "알리바바 사이트",
             "여름 시즌 클리닉 광고 배너",
           ],
+          fontColor: "black",
         },
 
         {
@@ -161,6 +164,7 @@ class Portfolio extends Component {
             "로고&메인&서브페이지 등",
             "웹/모바일 디자인 및 퍼블리싱",
           ],
+          fontColor: "black",
         },
         {
           idx: 9,
@@ -172,6 +176,7 @@ class Portfolio extends Component {
           work: "디자인 및 리사이징",
           tool: "Ps/Ai",
           contents: ["메이준뉴트리", "자사몰 단독 이벤트", "롤링배너"],
+          fontColor: "black",
         },
         {
           idx: 10,
@@ -187,6 +192,7 @@ class Portfolio extends Component {
             "수험생&대학생 할인 혜택",
             "이벤트 페이지",
           ],
+          fontColor: "white",
         },
         {
           idx: 11,
@@ -202,6 +208,7 @@ class Portfolio extends Component {
             "20주년 할인 혜택",
             "이벤트 페이지",
           ],
+          fontColor: "black",
         },
         {
           idx: 12,
@@ -217,6 +224,7 @@ class Portfolio extends Component {
             "모든 Pc/Dsktop 등에",
             "화면보호기",
           ],
+          fontColor: "white",
         },
         {
           idx: 13,
@@ -232,6 +240,7 @@ class Portfolio extends Component {
             "메디투안 디엔핑",
             "윤곽 수술 광고 배너",
           ],
+          fontColor: "black",
         },
         {
           idx: 14,
@@ -247,13 +256,14 @@ class Portfolio extends Component {
             "메인페이지 리뉴얼",
             "디자인 시안 2 version",
           ],
+          fontColor: "white",
         },
         {
           idx: 15,
           image: profileImg15,
           filterVal: "device",
           subTitle: "POPUP BANNER",
-          title: "그루비 팝업 배너",
+          title: "팝업 배너",
           period: "2019.05.21 - 05.24",
           work: "디자인 및 리사이징",
           tool: "Ps / Ai",
@@ -262,6 +272,7 @@ class Portfolio extends Component {
             "웹 페이지에 노출 되는",
             "그루비 광고 팝업 배너",
           ],
+          fontColor: "black",
         },
         {
           idx: 16,
@@ -273,6 +284,7 @@ class Portfolio extends Component {
           work: "디자인",
           tool: "Ps / Ai",
           contents: ["메이준뉴트리", "자사몰 단독 이벤트", "시즌배너"],
+          fontColor: "black",
         },
         {
           idx: 17,
@@ -288,17 +300,23 @@ class Portfolio extends Component {
             "온라인 및 홈쇼핑 상품",
             "소셜커머스 상세 페이지",
           ],
+          fontColor: "black",
         },
         {
           idx: 18,
           image: profileImg18,
           filterVal: "device",
-          subTitle: "DETAIL PAGE",
-          title: "상세 페이지",
+          subTitle: "WEB BANNER",
+          title: "온라인 광고 배너",
           period: "2019.05.21 - 05.24",
           work: "디자인 및 리사이징",
           tool: "Ps / Ai",
-          contents: ["메이준뉴트리", "자사몰 단독상품", "상세 페이지"],
+          contents: [
+            "온라인&웹 페이지에",
+            "노출 되는 드림성형외과",
+            "광고 배너",
+          ],
+          fontColor: "black",
         },
         {
           idx: 19,
@@ -314,6 +332,7 @@ class Portfolio extends Component {
             "비대면 자동접수와",
             "사전문진을 위한 앱",
           ],
+          fontColor: "black",
         },
         {
           idx: 20,
@@ -325,6 +344,7 @@ class Portfolio extends Component {
           work: "디자인",
           tool: "Ps / Ai",
           contents: ["드림성형외과", "압구정 CGV", "광고 시트배너"],
+          fontColor: "black",
         },
         {
           idx: 21,
@@ -336,6 +356,7 @@ class Portfolio extends Component {
           work: "디자인",
           tool: "Ps / Ai",
           contents: ["메이준 스킨케어", "홈쇼핑 제품", "홍보/설명 카달로그"],
+          fontColor: "black",
         },
         {
           idx: 22,
@@ -351,6 +372,7 @@ class Portfolio extends Component {
             "담당의사 약력 및 마이챠트",
             "책자/브로슈어",
           ],
+          fontColor: "white",
         },
         {
           idx: 23,
@@ -362,6 +384,7 @@ class Portfolio extends Component {
           work: "디자인",
           tool: "Ai",
           contents: ["경영 컨설팅 업체", "비즈마켓 LOGO CIBI", "로고/명함"],
+          fontColor: "black",
         },
         {
           idx: 24,
@@ -373,6 +396,7 @@ class Portfolio extends Component {
           work: "디자인",
           tool: "Ps / Ai",
           contents: ["드림메디컬그룹", "2020년도", "탁상용 달력"],
+          fontColor: "black",
         },
         {
           idx: 25,
@@ -388,6 +412,7 @@ class Portfolio extends Component {
             "기업성장전략 컨퍼런스",
             "베트남 다낭 출장 플래카드",
           ],
+          fontColor: "black",
         },
         {
           idx: 26,
@@ -403,6 +428,7 @@ class Portfolio extends Component {
             "학회발표자료 및 이벤트",
             "원내 X배너/미니배너",
           ],
+          fontColor: "black",
         },
         {
           idx: 27,
@@ -414,6 +440,7 @@ class Portfolio extends Component {
           work: "디자인",
           tool: "Ps / Ai",
           contents: ["드림성형외과", "태국 연예인 모델", "잡지 표지"],
+          fontColor: "black",
         },
         {
           idx: 28,
@@ -425,6 +452,7 @@ class Portfolio extends Component {
           work: "디자인",
           tool: "Ps / Ai",
           contents: ["드림성형외과", "강남구 의료관광센터", "홍보 브로슈어"],
+          fontColor: "black",
         },
         {
           idx: 29,
@@ -436,6 +464,7 @@ class Portfolio extends Component {
           work: "디자인",
           tool: "Ps / Ai",
           contents: ["드림성형외과", "압구정역/교대역", "지하철 옥외광고"],
+          fontColor: "black",
         },
         {
           idx: 30,
@@ -451,6 +480,7 @@ class Portfolio extends Component {
             "태국&중국 박람회",
             "성형모델 수술 전후 X배너",
           ],
+          fontColor: "black",
         },
         {
           idx: 31,
@@ -462,6 +492,7 @@ class Portfolio extends Component {
           work: "디자인",
           tool: "Ps / Ai",
           contents: ["이오스안과", "군인잡지 HIM", "라섹 홍보전단"],
+          fontColor: "black",
         },
         {
           idx: 32,
@@ -473,6 +504,7 @@ class Portfolio extends Component {
           work: "디자인",
           tool: "Ai",
           contents: ["드림성형외과", "K-뷰티산업협회", "공식인증 병원 상패"],
+          fontColor: "black",
         },
         {
           idx: 33,
@@ -488,6 +520,7 @@ class Portfolio extends Component {
             "메이킹영상 스토리보드 및",
             "스튜디오촬영 컨셉 기획",
           ],
+          fontColor: "black",
         },
       ], //포트폴리오 전체 json
       filterPortfolioArr: [], //필터상태 포트폴리오 json
@@ -604,8 +637,12 @@ class Portfolio extends Component {
             <span />
             <span />
             <img src={portfolio.image} />
-            <div className="sub-title-container">{portfolio.subTitle}</div>
-            <div className="title-container">{portfolio.title}</div>
+            <div className={"sub-title-container " + portfolio.fontColor}>
+              {portfolio.subTitle}
+            </div>
+            <div className={"title-container " + portfolio.fontColor}>
+              {portfolio.title}
+            </div>
           </div>
         </div>
       );

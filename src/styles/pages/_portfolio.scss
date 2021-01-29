@@ -129,21 +129,27 @@
         height: 100%;
       }
 
+      .black {
+        color: black;
+      }
+
+      .white {
+        color: #fff;
+      }
+
       .sub-title-container {
         position: absolute;
-        top: 8%;
-        left: 6.5%;
+        top: 5%;
+        left: 5%;
         font-size: 10pt;
-        color: black;
       }
 
       .title-container {
         position: absolute;
-        top: 12%;
-        left: 6.5%;
+        top: 10%;
+        left: 5%;
         font-size: 18pt;
         font-weight: 800;
-        color: black;
       }
     }
   }
