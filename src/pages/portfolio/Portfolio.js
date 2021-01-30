@@ -522,6 +522,7 @@ class Portfolio extends Component {
             "드림성형외과 리얼모델",
             "메이킹영상 스토리보드 및",
             "스튜디오촬영 컨셉 기획",
+            "https://youtu.be/J2IlVyhSaFo",
           ],
           fontColor: "black",
         },
