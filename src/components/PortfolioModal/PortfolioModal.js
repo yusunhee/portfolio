@@ -7,7 +7,6 @@ class PortfolioModal extends Component {
 
     let contentsComp = portfolioInfo.contents.map((contents) => {
       if (contents.includes("http://") || contents.includes("https://")) {
-        console.log("포함하나요? ", contents);
         return (
           <a href={contents} target="_blank">
             사이트로 이동
