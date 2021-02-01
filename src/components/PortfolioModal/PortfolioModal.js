@@ -6,12 +6,21 @@ class PortfolioModal extends Component {
     const { show, toggle, portfolioInfo } = this.props;
 
     let contentsComp = portfolioInfo.contents.map((contents) => {
-      return (
-        <div>
-          {contents}
-          <br />
-        </div>
-      );
+      if (contents.includes("http://") || contents.includes("https://")) {
+        console.log("포함하나요? ", contents);
+        return (
+          <a href={contents} target="_blank">
+            사이트로 이동
+          </a>
+        );
+      } else {
+        return (
+          <div>
+            {contents}
+            <br />
+          </div>
+        );
+      }
     });
 
     return (
