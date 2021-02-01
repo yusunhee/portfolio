@@ -9,7 +9,7 @@ class PortfolioModal extends Component {
       if (contents.includes("http://") || contents.includes("https://")) {
         return (
           <a href={contents} target="_blank">
-            사이트로 이동
+            사이트로 이동 ⇀
           </a>
         );
       } else {
