@@ -11,12 +11,16 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
-
+  @media (max-width: 1440px) {
+    .intro-content {
+      font-size: 45pt;
+    }
+  }
   //intro 글씨 1줄 일때
   .intro-content:before,
   .intro-content:after {
     content: "";
-    padding: 0.9em 0.4em;
+    padding: 90px 50px;
     position: absolute;
     left: 50%;
     width: 100%;
@@ -28,18 +32,10 @@
   }
 
   //intro 글씨 2줄 일때
-  @media (max-width: 1901px) {
+  @media (max-width: 1440px) {
     .intro-content:before,
     .intro-content:after {
-      padding: 1.3em 0.4em;
-    }
-  }
-
-  //intro 글씨 3줄 일때
-  @media (max-width: 985px) {
-    .intro-content:before,
-    .intro-content:after {
-      padding: 2em 0.4em;
+      padding: 150px 30px;
     }
   }
 
