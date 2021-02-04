@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Logo from "components/Header/Logo";
 import Menu from "components/Header/Menu";
 import SideNav from "components/Header/SideNav";
+import MobileMenu from "components/Header/MobileMenu";
 
 class Header extends Component {
   constructor(props) {
@@ -22,12 +23,20 @@ class Header extends Component {
     const { showPageName } = this.props;
 
     return (
-      <div className="abs header">
-        {showPageName === "Intro" && <Logo />}
-        <Menu showPageName={showPageName} />
-        {showPageName !== "Portfolio" && (
-          <SideNav showPageName={showPageName} />
-        )}
+      <div>
+        <div className="abs header">
+          {showPageName === "Intro" && <Logo />}
+          <Menu showPageName={showPageName} />
+          {showPageName !== "Portfolio" && (
+            <SideNav showPageName={showPageName} />
+          )}
+        </div>
+        <div className="abs mobile-header">
+          <div className="page-name">{showPageName}</div>
+          <div>
+            <MobileMenu />
+          </div>
+        </div>
       </div>
     );
   }

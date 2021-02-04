@@ -1,3 +1,25 @@
 .header {
   width: 100%;
 }
+
+.mobile-header {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .page-name {
+      writing-mode: vertical-rl;
+      transform: rotate(360deg);
+      align-self: center;
+    }
+  }
+}
