@@ -58,3 +58,8 @@ button {
 .position {
   position: relative;
 }
+@media (max-width: 1901px) {
+  .fp-left {
+    display: none;
+  }
+}
