@@ -5,7 +5,11 @@
   display: flex;
   background: #ffb000;
 
-  @media (max-width: 1144px) {
+  @media (max-width: 1440px) {
+    padding-top: 0;
+  }
+
+  @media (max-width: 1440px) {
     display: flex;
     flex-direction: column;
     padding-top: 139px;
@@ -19,6 +23,11 @@
     flex: 1.5;
     align-self: center;
 
+    @media (max-width: 1440px) {
+      display: flex;
+      flex: 0;
+    }
+
     .filter {
       text-decoration: none;
       font: 20px Raleway;
@@ -28,6 +37,11 @@
       z-index: 0;
       cursor: pointer;
       color: #fff;
+
+      @media (max-width: 1440px) {
+        font: 12pt Raleway;
+        padding: 0;
+      }
     }
   }
 
@@ -71,10 +85,10 @@
       padding-bottom: 30px;
       cursor: pointer;
 
-      @media (max-width: 1144px) {
+      @media (max-width: 1440px) {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
       }
 
       .screen {
