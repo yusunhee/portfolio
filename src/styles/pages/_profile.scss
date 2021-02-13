@@ -45,7 +45,8 @@
 
       @media (max-width: 1440px) {
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        padding-bottom: 109.1px;
       }
 
       //프로필 이미지
@@ -135,9 +136,10 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
-   
+
     @media (max-width: 1440px) {
-      height: auto;}
+      height: auto;
+    }
 
     .main-title {
       text-align: center;
