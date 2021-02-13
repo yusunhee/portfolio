@@ -9,6 +9,7 @@
     padding-top: 0;
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 
   //포트폴리오 필터
@@ -168,4 +169,7 @@
       }
     }
   }
+}
+.fp-tableCell {
+  display: block !important;
 }
