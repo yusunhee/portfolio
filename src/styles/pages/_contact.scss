@@ -8,11 +8,13 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 5em 2.5em;
+  padding: 50px;
   box-sizing: border-box;
 
   @media (max-width: 1440px) {
     display: block;
+    padding: 10px;
+    height: auto;
   }
 
   //contact 영역
@@ -46,10 +48,17 @@
       max-height: 650px;
       position: relative;
       width: 100%;
+      @media (max-width: 1440px) {
+        border: 0;
+      }
     }
 
     form {
-      padding: 45px;
+      padding: 50px;
+
+      @media (max-width: 1440px) {
+        padding: 20px;
+      }
     }
 
     h2 {
@@ -59,11 +68,20 @@
       letter-spacing: 7px;
       text-align: center;
       padding-top: 45px;
+
+      @media (max-width: 1440px) {
+        padding: 20px;
+        letter-spacing: 3px;
+      }
     }
 
     .email {
       float: right;
       width: 45%;
+      @media (max-width: 1440px) {
+        float: none;
+        width: 100%;
+      }
     }
 
     input[type="text"],
@@ -111,6 +129,9 @@
       height: 150px;
       resize: none;
       width: 100%;
+      @media (max-width: 1440px) {
+        height: 120px;
+      }
     }
 
     ::-webkit-input-placeholder {
@@ -154,12 +175,6 @@
     ul {
       display: flex;
       list-style: none;
-
-      //가로 사이즈가 1145px 미만이면
-      @media (max-width: 1440px) {
-        padding-top: 95px;
-        flex-direction: column;
-      }
     }
 
     ul li {
