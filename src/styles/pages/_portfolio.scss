@@ -7,12 +7,8 @@
 
   @media (max-width: 1440px) {
     padding-top: 0;
-  }
-
-  @media (max-width: 1440px) {
     display: flex;
     flex-direction: column;
-    padding-top: 139px;
   }
 
   //포트폴리오 필터
@@ -76,6 +72,10 @@
     flex: 8.5;
     padding: 30px;
     background: #fff;
+
+    @media (max-width: 1440px) {
+      flex: 0;
+    }
 
     //포트폴리오 리스트
     .portfolio-list {
