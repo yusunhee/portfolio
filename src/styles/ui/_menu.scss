@@ -7,38 +7,6 @@
   text-align: -webkit-center;
   background: #fff;
 
-  // .menu {
-  //   display: flex;
-  //   padding: 10px;
-  //   width: 40%;
-  //   font-family: "NanumSquare", sans-serif;
-  //   color: #000000;
-  //   font-size: 1rem;
-
-  //   //메뉴 기본 상태
-  //   .menu-btn {
-  //     flex: 1;
-  //     cursor: pointer;
-  //     text-align: center;
-  //   }
-
-  //   //메뉴 마우스 over 됐을 때 상태
-  //   .menu-btn:hover {
-  //     color: rgb(255, 208, 0);
-  //   }
-
-  //   //메뉴 선택 되어있는 상태
-  //   .selected-menu {
-  //     color: brown;
-  //   }
-  // }
-
-  // @media (max-width: 900px) {
-  //   .menu {
-  //     flex-direction: column;
-  //   }
-  // }
-
   .menu {
     display: flex;
     justify-content: center;
@@ -117,12 +85,6 @@
   @for $i from 1 through 5 {
     nav a:nth-child(#{$i}) {
       animation: show 0.2s #{$i * 0.1+1}s ease 1 both;
-    }
-  }
-
-  @media (max-width: 1144px) {
-    .menu {
-      flex-direction: column;
     }
   }
 
