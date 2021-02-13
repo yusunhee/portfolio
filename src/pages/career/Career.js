@@ -161,6 +161,62 @@ class Career extends Component {
             <div className="circle_top" />
             <div className="circle_bottom" />
             <div className="license-title">License</div>
+            <div className="license-container-mo">
+              <div className="Year">
+                <div className="underline">2014년</div>
+              </div>
+              <p className="licenseName">
+                #웹디자인기능사
+                <span className="issue-Agency-Date">
+                  (2014.04. 한국산업인력공단)
+                </span>
+              </p>
+              <p className="licenseName">
+                #SOKI 국제 디자인 & 일러스트레이션 입상
+                <span className="issue-Agency-Date">
+                  (2014.01. 한국일러스트학회)
+                </span>
+              </p>
+              <div className="Year">
+                <div className="underline">2009년</div>
+              </div>
+              <p className="licenseName">
+                #GTQ 포토샵
+                <span className="issue-Agency-Date">
+                  (2009.10. 한국생산성본부 KPC)
+                </span>
+              </p>
+              <p className="licenseName">
+                #정보기기운용기능사
+                <span className="issue-Agency-Date">
+                  (2009.07. 한국산업인력공단)
+                </span>
+              </p>
+              <div className="Year">
+                <div className="underline">2008년</div>
+              </div>
+              <p className="licenseName">
+                #정보기술자격 ITQ 한글파워포인트
+                <span className="issue-Agency-Date">
+                  (2008.06. 한국생산성본부 KPC)
+                </span>
+              </p>
+              <div className="Year">
+                <div className="underline">2007년</div>
+              </div>
+              <p className="licenseName">
+                #워드프로세서
+                <span className="issue-Agency-Date">
+                  (2007.08. 대한상공회의소)
+                </span>
+              </p>
+              <p className="licenseName">
+                #정보기술자격 ITQ 아래한글
+                <span className="issue-Agency-Date">
+                  (2007.07. 한국생산성본부 KPC)
+                </span>
+              </p>
+            </div>
             <div className="timeline-container">
               <div className="timeline">
                 <ul>{showLicense}</ul>

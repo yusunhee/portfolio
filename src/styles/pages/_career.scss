@@ -16,8 +16,8 @@ $yellow: #ffb000;
     height: 73%;
 
     @media (max-width: 1440px) {
+      padding-top: -90;
       flex-direction: column;
-      padding-top: 95px;
     }
 
     .license-container {
@@ -88,6 +88,9 @@ $yellow: #ffb000;
               left: 80%;
             }
           }
+          @media (max-width: 1440px) {
+            display: none;
+          }
         }
 
         .circle_bottom {
@@ -107,11 +110,14 @@ $yellow: #ffb000;
               left: 9%;
             }
           }
+          @media (max-width: 1440px) {
+            display: none;
+          }
         }
       }
 
       .license-title {
-        font-size: 4rem;
+        font-size: 50pt;
         font-family: "Tinos", serif;
         color: black;
         text-align: center;
@@ -121,7 +127,32 @@ $yellow: #ffb000;
 
         @media (max-width: 1440px) {
           margin: 0;
-          margin-bottom: 20px;
+          font-size: 20pt;
+          text-align: left;
+        }
+      }
+      .license-container-mo {
+        display: none;
+        @media (max-width: 1440px) {
+          display: block;
+          .Year {
+            font-size: 15pt;
+            margin-top: 15px;
+            .underline {
+              display: inline-block;
+              line-height: 0em;
+              padding-bottom: 0.5em;
+              background: #ffb000;
+            }
+          }
+
+          .licenseName {
+            font-size: 10.5pt;
+            margin: 0;
+          }
+          .issue-Agency-Date {
+            font-size: 8pt;
+          }
         }
       }
 
@@ -129,6 +160,10 @@ $yellow: #ffb000;
       .timeline-container {
         display: flex;
         width: 100%;
+        height: auto;
+        @media (max-width: 1440px) {
+          display: none;
+        }
       }
 
       .timeline {
@@ -158,6 +193,10 @@ $yellow: #ffb000;
         font-weight: 400;
         line-height: 30px;
         margin: -20px 0 10px 0;
+
+        @media (max-width: 1440px) {
+          font-size: 15pt;
+        }
       }
 
       //내용
@@ -248,6 +287,10 @@ $yellow: #ffb000;
       flex: 1;
       justify-content: space-around;
 
+      @media (max-width: 1440px) {
+        width: 90%;
+      }
+
       .text {
         font-size: 13pt;
         text-align: left;
@@ -262,14 +305,9 @@ $yellow: #ffb000;
       .chart {
         display: flex;
         margin-bottom: 15px;
-
-      }
-      @media (max-width: 1440px) {
-        .chart {
+        @media (max-width: 1440px) {
           margin-bottom: -5px;
         }
-
-        
       }
     }
 
@@ -277,18 +315,6 @@ $yellow: #ffb000;
       .graph-contents {
         font-size: 10pt;
       }
-    }
-
-    @media (max-width: 1440px) {
-      .skill-container {
-        width: 90%;
-      }
-    }
-  }
-
-  @media (max-width: 1440px) {
-    .license-skill-container {
-      padding-top: 0;
     }
   }
 }
