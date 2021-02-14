@@ -127,17 +127,18 @@ $yellow: #ffb000;
 
         @media (max-width: 1440px) {
           margin: 0;
-          font-size: 20pt;
+          font-size: 25pt;
           text-align: left;
         }
       }
       .license-container-mo {
         display: none;
+        padding: 15px;
         @media (max-width: 1440px) {
           display: block;
           .Year {
             font-size: 15pt;
-            margin-top: 15px;
+            margin-top: 20px;
             .underline {
               display: inline-block;
               line-height: 0em;
@@ -289,6 +290,7 @@ $yellow: #ffb000;
 
       @media (max-width: 1440px) {
         width: 90%;
+        margin-bottom: 10%;
       }
 
       .text {
