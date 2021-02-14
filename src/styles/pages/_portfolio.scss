@@ -36,7 +36,7 @@
       color: #fff;
 
       @media (max-width: 1440px) {
-        font: 12pt Raleway;
+        font: 13pt Raleway;
         padding: 0;
       }
     }
@@ -71,7 +71,7 @@
 
   .list-container {
     flex: 8.5;
-    padding: 30px;
+    padding: 1%;
     background: #fff;
 
     @media (max-width: 1440px) {
@@ -89,12 +89,11 @@
       @media (max-width: 1440px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
       }
 
       .screen {
         position: relative;
-        margin: 3px;
+        margin: 1%;
       }
 
       .screen img {
@@ -158,6 +157,9 @@
         top: 5%;
         left: 5%;
         font-size: 10pt;
+        @media (max-width: 1440px) {
+          display: none;
+        }
       }
 
       .title-container {
@@ -166,6 +168,11 @@
         left: 5%;
         font-size: 18pt;
         font-weight: 800;
+
+        @media (max-width: 1440px) {
+          font-size: 12pt;
+          margin-top: -10px;
+        }
       }
     }
   }
