@@ -16,7 +16,6 @@ $yellow: #ffb000;
     height: 73%;
 
     @media (max-width: 1440px) {
-      padding-top: -90;
       flex-direction: column;
     }
 
@@ -40,8 +39,11 @@ $yellow: #ffb000;
         height: 150px;
         border-radius: 50%;
         background: $yellow;
-
         animation: move1 3s ease infinite;
+
+        @media (max-width: 1440px) {
+          display: none;
+        }
 
         @keyframes move1 {
           50% {
@@ -59,59 +61,16 @@ $yellow: #ffb000;
         height: 370px;
         border-radius: 50%;
         background: $yellow;
-
         animation: move2 3s ease infinite;
+
+        @media (max-width: 1440px) {
+          display: none;
+        }
 
         @keyframes move2 {
           50% {
             top: 72%;
             left: 3%;
-          }
-        }
-      }
-
-      @media (max-width: 1440px) {
-        .circle_top {
-          position: absolute;
-          top: 10%;
-          left: 70%;
-          width: 80px;
-          height: 80px;
-          border-radius: 50%;
-          background: $yellow;
-
-          animation: move1 5s ease infinite;
-
-          @keyframes move1 {
-            50% {
-              top: 20%;
-              left: 80%;
-            }
-          }
-          @media (max-width: 1440px) {
-            display: none;
-          }
-        }
-
-        .circle_bottom {
-          position: absolute;
-          top: 43%;
-          left: 6%;
-          width: 130px;
-          height: 130px;
-          border-radius: 50%;
-          background: $yellow;
-
-          animation: move2 5s ease infinite;
-
-          @keyframes move2 {
-            50% {
-              top: 45%;
-              left: 9%;
-            }
-          }
-          @media (max-width: 1440px) {
-            display: none;
           }
         }
       }
@@ -131,37 +90,13 @@ $yellow: #ffb000;
           text-align: left;
         }
       }
-      .license-container-mo {
-        display: none;
-        padding: 15px;
-        @media (max-width: 1440px) {
-          display: block;
-          .Year {
-            font-size: 15pt;
-            margin-top: 20px;
-            .underline {
-              display: inline-block;
-              line-height: 0em;
-              padding-bottom: 0.5em;
-              background: #ffb000;
-            }
-          }
-
-          .licenseName {
-            font-size: 10.5pt;
-            margin: 0;
-          }
-          .issue-Agency-Date {
-            font-size: 8pt;
-          }
-        }
-      }
 
       //타임라인 감싸는 부분
       .timeline-container {
         display: flex;
         width: 100%;
         height: auto;
+
         @media (max-width: 1440px) {
           display: none;
         }
@@ -194,10 +129,6 @@ $yellow: #ffb000;
         font-weight: 400;
         line-height: 30px;
         margin: -20px 0 10px 0;
-
-        @media (max-width: 1440px) {
-          font-size: 15pt;
-        }
       }
 
       //내용
@@ -279,6 +210,36 @@ $yellow: #ffb000;
         .timeline ul li:nth-child(even)::after {
           transform: translate(-50%, -50%);
           left: -30px;
+        }
+      }
+
+      //모바일일 때 라이센스 영역
+      .license-container-mo {
+        display: none;
+
+        @media (max-width: 1440px) {
+          display: block;
+          padding: 15px;
+
+          .Year {
+            font-size: 15pt;
+            margin-top: 20px;
+
+            .underline {
+              display: inline-block;
+              line-height: 0em;
+              padding-bottom: 0.5em;
+              background: #ffb000;
+            }
+          }
+
+          .licenseName {
+            font-size: 10.5pt;
+            margin: 0;
+          }
+          .issue-Agency-Date {
+            font-size: 8pt;
+          }
         }
       }
     }
