@@ -653,12 +653,7 @@ class Portfolio extends Component {
     let filterList = ["전체", "웹/모바일", "편집디자인", "기타"];
     let filterComp = filterList.map((filter, idx) => {
       return (
-        <div
-          className="filter"
-          onClick={() => {
-            this.handleOnFilterClick(idx);
-          }}
-        >
+        <div className="filter" onClick={() => this.handleOnFilterClick(idx)}>
           {filter}
         </div>
       );
