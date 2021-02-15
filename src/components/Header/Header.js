@@ -33,9 +33,7 @@ class Header extends Component {
         </div>
         <div className="abs mobile-header">
           <div className="page-name">{showPageName}</div>
-          <div>
-            <MobileMenu />
-          </div>
+          <MobileMenu />
         </div>
       </div>
     );
