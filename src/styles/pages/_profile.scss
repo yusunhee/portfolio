@@ -10,10 +10,9 @@
   @media (max-width: 1440px) {
     flex-direction: column;
     padding-top: 0;
-    height: auto;
+    height: 100%;
   }
 
-  //페이지 width사이즈가 1145사이즈 이상일때 이미지 영역
   .left-contents {
     background: #ffb000;
     // box-shadow: inset -8px 6px 50px 0px darkorange;
@@ -46,7 +45,6 @@
       @media (max-width: 1440px) {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr;
-        padding-bottom: 109.1px;
       }
 
       //프로필 이미지
@@ -121,8 +119,6 @@
           font-size: 12pt;
           margin-top: 50px;
           text-align: end;
-          p {
-          }
         }
       }
     }
@@ -138,7 +134,7 @@
     grid-template-columns: 1fr 5fr;
 
     @media (max-width: 1440px) {
-      height: auto;
+      display: none;
     }
 
     .main-title {
@@ -151,10 +147,6 @@
       color: #ffb000;
       text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
         0px -5px 35px rgba(255, 255, 255, 0.3);
-
-      @media (max-width: 1440px) {
-        display: none;
-      }
     }
 
     .contents-text {
@@ -163,10 +155,6 @@
       place-self: center;
       justify-self: left;
       display: flex;
-
-      @media (max-width: 1440px) {
-        display: none;
-      }
 
       .title {
         font-size: 15pt;
