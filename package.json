@@ -24,7 +24,8 @@
     "react-typing-animation": "^1.6.2",
     "reactstrap": "^8.6.0",
     "redux": "^4.0.5",
-    "redux-actions": "^2.6.5"
+    "redux-actions": "^2.6.5",
+    "rxjs": "7"
   },
   "scripts": {
     "start": "react-scripts start",

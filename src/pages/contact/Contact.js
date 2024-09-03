@@ -120,7 +120,7 @@ class Contact extends Component {
               </i>
             </div>
             <div>
-              <a href="https://www.instagram.com/yusunhee_/" target="_blank">
+              <a href="https://www.instagram.com/yusunheee/" target="_blank">
                 <i className="icon-instagram box"> sns</i>
               </a>
             </div>
